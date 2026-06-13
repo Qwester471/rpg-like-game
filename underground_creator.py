@@ -21,12 +21,12 @@ def add_room_to_map(game_map: list, *args: int) -> None:
     for i in range(x1,x1+x2):
         for j in range(y1,y1+y2):
             game_map[i][j] = 1
-    
+def add_rooms_to_map(game_map:list, rooms: list) -> None:
+    for room in rooms: add_room_to_map(game_map, *room) 
 
 #game = create_map(25,25)
 #rooms = create_rooms(game)
-#for room in rooms:
-    #add_room_to_map(game, *room)
+#add_rooms_to_map(game, rooms)
 #for i in game: print(i, sep='\n')
 
 # Не доделано, нужна проверка на столкновения комнат

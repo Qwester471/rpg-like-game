@@ -23,8 +23,10 @@ def add_room_to_map(game_map: list, *args: int) -> None:
             game_map[i][j] = 1
     
 
-game = create_map(25,25)
-rooms = create_rooms(game)
-for room in rooms:
-    add_room_to_map(game, *room)
-for i in game: print(i, sep='\n')
+#game = create_map(25,25)
+#rooms = create_rooms(game)
+#for room in rooms:
+    #add_room_to_map(game, *room)
+#for i in game: print(i, sep='\n')
+
+# Не доделано, нужна проверка на столкновения комнат
